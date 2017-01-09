@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>xin-rating Demo</title>
+</head>
+<body>
+  <h1>xin-rating</h1>
+
+  <xin-fixture id="fixture">
+    <template>
+      <div>
+        <label>Rating</label>
+      </div>
+      <div>
+        <xin-rating value="{{rating}}"></xin-rating>
+      </div>
+      <div>
+        <input type="text" value="{{rating}}">
+      </div>
+      <div>
+        <xin-rating readonly value="[[rating]]"></xin-rating>
+      </div>
+    </template>
+  </xin-fixture>
+
+  <script src="./index.js"></script>
+</body>
+</html>
