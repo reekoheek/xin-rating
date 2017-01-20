@@ -58,6 +58,8 @@ class XinRating extends xin.Component {
       // el.querySelector('svg').setAttribute('width', `${this.size}px`);
       this.appendChild(el);
     }
+    
+    this.valueChanged(this.value);
   }
 
   ratingClicked (evt) {
