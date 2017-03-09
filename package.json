@@ -9,7 +9,7 @@
     "build": "webpack"
   },
   "dependencies": {
-    "xin": "xinix-technology/xin#next"
+    "xin": "xinix-technology/xin#2.3.1"
   },
   "devDependencies": {
     "babel-core": "^6.21.0",
