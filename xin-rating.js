@@ -77,8 +77,9 @@ class XinRating extends xin.Component {
 
   valueChanged (value) {
     value = parseFloat(value, 10);
-
-    this.querySelectorAll('.rating').forEach((el, index) => {
+    let rating = this.querySelectorAll('.rating');
+    let array = this.toArray(rating);
+    array.forEach((el, index) => {
       el.classList.remove('full');
       el.classList.remove('half');
       if (index < value) {
@@ -89,6 +90,12 @@ class XinRating extends xin.Component {
         }
       }
     });
+  }
+
+  toArray (list) {
+    var i, array = [];
+    for  (i=0; i<list.length;i++) {array[i] = list[i];}
+    return array;
   }
 }
 
